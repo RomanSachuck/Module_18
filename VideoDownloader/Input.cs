@@ -19,7 +19,7 @@
 
             result = Console.ReadLine();
   
-            while(result.Length < sampleStartUrl.Length || result == string.Empty || result.Substring(0, sampleStartUrl.Length) != sampleStartUrl)
+            while(result == null || result.Length < sampleStartUrl.Length || result.Substring(0, sampleStartUrl.Length) != sampleStartUrl)
             {
                 Console.WriteLine("Неверный ввод! Повторите попытку.");
 
