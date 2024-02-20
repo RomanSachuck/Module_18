@@ -29,8 +29,6 @@
                 result = Console.ReadLine();
             }
 
-            
-
             return result;
         }
 
