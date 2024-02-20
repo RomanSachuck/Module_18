@@ -1,4 +1,4 @@
-﻿namespace VideoDownloader
+namespace VideoDownloader
 {
     internal static class Input
     {
@@ -38,11 +38,11 @@
 
             result = Console.ReadLine();
 
-            while (result == null || result == string.Empty || result.Substring(result.Length - 4) != ".mp4")
+            while (result == null || result.Length < 5 || result.Substring(result.Length - 4) != ".mp4")
             {
                 Console.WriteLine($"{Environment.NewLine}Неверный ввод! Повторите попытку.");
 
-                if (result.Substring(result.Length - 4) != ".mp4")
+                if (result.Length < 5 || result.Substring(result.Length - 4) != ".mp4")
                     Console.WriteLine("Последним элементом пути должно быть название видео с расширением .mp4");
                     
                 result = Console.ReadLine();    
